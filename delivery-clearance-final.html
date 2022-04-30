@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Доставка</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__grid">
+    
+        <a href="index.html" class="header__col-1">
+          <img class="header__logotype" src="./img/Logo.svg" alt="Логотип" width="92px" height="34px">
+        </a>
+    
+        <div class="header__col-2">
+          <a class="header__catalog-btn" href="/" data-header="catalog"> <!-- header__catalog-btn--active добавить для авктивного пункта меню на странице которой находимся -->
+            Каталог
+          </a>
+          <div class="header__catalog-menu">
+              <ul class="header__catalog-list container">
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Parket.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Паркет
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Плитка
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    
+        <div class="header__col-3">
+          <ul class="nav" id="config-btn">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="portfolio.html"> <!-- nav__link--active использовать для активного пункта на странице которой находимся -->
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html"> 
+                  О компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html"> 
+                  Доставка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacts.html"> 
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </div>
+    
+        <div class="header__col-4 header__block-icon">
+          <a href="block-catalog.html" class="header__block-basket">
+            <img class="header__basket header__hover" src="./img/Icon/Icon _ Basket.svg" alt="Корзина" width="40px" height="40px">
+            <span class="header__basket-title">2</span>
+          </a>
+          <div class="nav-menu__menuToggle nav-menu__icon" data-header="menu">
+              <span class="nav-menu__hamburger"></span>
+          </div>
+        </div>
+    
+        <button type="button" class="header__col-5 header__search" data-header="search">
+          <svg class="header__hover" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6 24.4L29.2 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8 18C26.8 22.4184 23.039 26 18.3997 26C13.7605 26 10 22.4184 10 18C10 13.5816 13.7605 10 18.3997 10C23.039 10 26.8 13.5816 26.8 18V18Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+    
+        <!-- выдвижной поиск меню-->
+        <div class="header__search-form">
+          <form class="header__search-form-grid" action="#" method="post">
+            <div class="header__search-form-col">
+              <input class="header__search-form-input" type="search" placeholder="Найти...">
+            </div>
+          </form>
+    
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- BEGIN BREADCRUMBS -->
+      <div class="breadcrumbs container">
+      	<ol class="breadcrumbs__cont" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+      		<li class="breadcrumbs__list" itemprop="itemListElement" itemscope="itemscope" itemtype="#">
+      			<a class="breadcrumbs__link" itemprop="item" href="#">
+      				<span itemprop="name">Главная</span>
+      			</a>
+      			<img class="breadcrumbs__icon" src="./img/Icon/Icon _ breadcrumps-arrow.svg" alt="Стрелка">
+      			<meta itemprop="position" content="1"/>
+      		</li>
+      		<li class="breadcrumbs__list" itemprop="itemListElement" itemscope="itemscope" itemtype="#">
+      			<a class="breadcrumbs__link" itemprop="item" href="#">
+      				<span itemprop="name">Первый уровень</span>
+      			</a>
+      			<img class="breadcrumbs__icon" src="./img/Icon/Icon _ breadcrumps-arrow.svg" alt="Стрелка">
+      			<meta itemprop="position" content="2"/>
+      		</li>
+      		<li class="breadcrumbs__list" itemprop="itemListElement" itemscope="itemscope" itemtype="#">
+      			<a class="breadcrumbs__link--active" itemprop="item">
+      				<span itemprop="name">Второй уровень</span>
+      			</a>
+      			<meta itemprop="position" content="3"/>
+      		</li>
+      	</ol>
+      </div>
+      <!-- END BREADCRUMBS-->
+      <div class="section-title-main">
+          <div class="container">
+              <h1 class="section-title-main__text">
+                  Оформление доставки
+              </h1>
+          </div>
+      </div>
+      <div class="block-delivery-clearance container">
+        <div class="block-delivery-clearance__grid">
+            <div class="block-delivery-clearance__col-1 block-delivery-clearance__col-1--extra">
+                <h3 class="block-delivery-clearance__title">
+                  Спасибо за ваш заказ!
+                </h3>
+                <p class="block-delivery-clearance__paragrafe">
+                  Ваш заказ уже находится в пути, о всех перемещениях груза вы будете извещенны через SMS и сообщений на e-mail почту.
+                </p>
+                <span class="block-delivery-clearance__caption">
+                  По всем вопросам обращайтесьв <br> отдел доставки:  тел. 8 (987) 654 32 10
+                </span>
+            </div>
+            <div>
+              <div class="cart-price">
+                <div class="cart-price__grid">
+                    <div class="cart-price__block-image">
+                        <img class="cart-price__image" src="./img/Image_cart/Image_cart_Albion_Prima.png" alt="Изображение">
+                    </div>
+                    <div class="cart-price__block-text">
+                        <span class="cart-price__title">
+                            Calacatta Prima
+                        </span>
+                        <div class="cart-price__col">
+                            <div class="cart-price__descriptor">
+                                Размеры: 40x80
+                            </div>
+                            <div class="cart-price__descriptor">
+                                В наличии: 258 уп.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="cart-price__info-extra">
+                    Общий вес заказа: 10 кг.
+                </span>
+                <div class="cart-price__block-price">
+                    <div class="cart-price__grid-extra">
+                        <div>
+                            <div class="cart-price__delivery-text">
+                                Доставка:
+                            </div> 
+                            <div class="cart-price__text-size">
+                                Итого:
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cart-price__price">
+                                200 руб.
+                            </div> 
+                            <div class="cart-price__text-size">
+                                1450 руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-80">
+      <div class="block-recommendations container">
+          <h2 class="block-recommendations__title">
+              Рекомендации для вас
+          </h2>
+          <div class="block-recommendations__grid">
+              <div class="block-recommendations__col">
+                  <div class="cart-recommendations">
+                      <div class="cart-recommendations__grid">
+                          <div class="cart-recommendations__block-image">
+                              <img class="cart-recommendations__image" src="./img/Image_cart/Image_cart_Albion_Prima.png" alt="Изображение">
+                          </div>
+                          <div class="cart-recommendations__block-text">
+                              <span class="cart-recommendations__title">
+                                  Calacatta Prima
+                              </span>
+                              <div class="cart-recommendations__paragrafe">
+                                  2200 руб.
+                              </div>
+                              <a href="/" class="btn btn--secondary btn--small">
+                                  Подробнее
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="block-recommendations__col">
+                  <div class="cart-recommendations">
+                      <div class="cart-recommendations__grid">
+                          <div class="cart-recommendations__block-image">
+                              <img class="cart-recommendations__image" src="./img/Image_cart/Image_cart_Albion_Prima.png" alt="Изображение">
+                          </div>
+                          <div class="cart-recommendations__block-text">
+                              <span class="cart-recommendations__title">
+                                  Calacatta Prima
+                              </span>
+                              <div class="cart-recommendations__paragrafe">
+                                  2200 руб.
+                              </div>
+                              <a href="/" class="btn btn--secondary btn--small">
+                                  Подробнее
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="block-recommendations__col">
+                  <div class="cart-recommendations">
+                      <div class="cart-recommendations__grid">
+                          <div class="cart-recommendations__block-image">
+                              <img class="cart-recommendations__image" src="./img/Image_cart/Image_cart_Albion_Prima.png" alt="Изображение">
+                          </div>
+                          <div class="cart-recommendations__block-text">
+                              <span class="cart-recommendations__title">
+                                  Calacatta Prima
+                              </span>
+                              <div class="cart-recommendations__paragrafe">
+                                  2200 руб.
+                              </div>
+                              <a href="/" class="btn btn--secondary btn--small">
+                                  Подробнее
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col-1">
+                    <img class="footer__logotype" src="./img/Logo_white.svg" alt="Логотип" width="92px" height="34px">
+                    <p class="footer__description">
+                        Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-2"></div>
+                <div class="footer__col-3">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__title-extra">
+                                Разделы
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <span class="footer__title-extra">
+                        Instagram
+                    </span>
+                    <div class="footer__block-instagram">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_1.png" alt="Instagram_1">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_2.png" alt="Instagram_2">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_3.png" alt="Instagram_3">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_4.png" alt="Instagram_4">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_5.png" alt="Instagram_5">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_6.png" alt="Instagram_6">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    © Полное название компании, 2021
+                </div>
+                <div class="footer__block-arrow">
+                    <a href="http://www.alice-studio.ru/" target="_blank">
+                        <img src="./img/Подпись_АР_белый 1.svg" alt="Логотип Погарская Алиса">
+                    </a>
+                    <a class="footer__block-arrow-top scroll-to" href="#top">
+                        <svg class="footer__arrow-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.66667L5 12.5L10 7.66667V7.66667Z" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 7.66667L15 12.5" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

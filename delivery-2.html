@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Доставка</title>
+        <meta name="theme-color" content="#c9e0e04d">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+        <link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__grid">
+        
+            <a href="index.html" class="header__col-1">
+              <img class="header__logotype" src="./img/Logo.svg" alt="Логотип" width="92px" height="34px">
+            </a>
+        
+            <div class="header__col-2">
+              <a class="header__catalog-btn" href="/" data-header="catalog"> <!-- header__catalog-btn--active добавить для авктивного пункта меню на странице которой находимся -->
+                Каталог
+              </a>
+              <div class="header__catalog-menu">
+                  <ul class="header__catalog-list container">
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Parket.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Паркет
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Плитка
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                      <a href="block-catalog.html" class="header__catalog-title">
+                        Новый раздел
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        
+            <div class="header__col-3">
+              <ul class="nav" id="config-btn">
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="portfolio.html"> <!-- nav__link--active использовать для активного пункта на странице которой находимся -->
+                      Портфолио
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="about.html"> 
+                      О компании
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="delivery.html"> 
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="contacts.html"> 
+                      Контакты
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        
+            <div class="header__col-4 header__block-icon">
+              <a href="block-catalog.html" class="header__block-basket">
+                <img class="header__basket header__hover" src="./img/Icon/Icon _ Basket.svg" alt="Корзина" width="40px" height="40px">
+                <span class="header__basket-title">2</span>
+              </a>
+              <div class="nav-menu__menuToggle nav-menu__icon" data-header="menu">
+                  <span class="nav-menu__hamburger"></span>
+              </div>
+            </div>
+        
+            <button type="button" class="header__col-5 header__search" data-header="search">
+              <svg class="header__hover" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6 24.4L29.2 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8 18C26.8 22.4184 23.039 26 18.3997 26C13.7605 26 10 22.4184 10 18C10 13.5816 13.7605 10 18.3997 10C23.039 10 26.8 13.5816 26.8 18V18Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+        
+            <!-- выдвижной поиск меню-->
+            <div class="header__search-form">
+              <form class="header__search-form-grid" action="#" method="post">
+                <div class="header__search-form-col">
+                  <input class="header__search-form-input" type="search" placeholder="Найти...">
+                </div>
+              </form>
+        
+            </div>
+          </div>
+        </header>
+        <main>
+            <div class="section-title">
+                <div class="container">
+                    <h1 class="section-title__text">
+                        Доставка
+                    </h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="tabs" id="tabs">
+                    <!-- Кнопки -->
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item">
+                            <a href="#tab-1">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="tabs__nav-item">
+                            <a href="#tab-2">
+                                Самовывозы
+                            </a>
+                        </li>
+                        <li class="tabs__nav-item">
+                            <a href="#tab-3">
+                                CDEK
+                            </a>
+                        </li>
+                        <li class="tabs__nav-item">
+                            <a href="#tab-4">
+                                Вопросы и ответы
+                            </a>
+                        </li>
+                    </ul>	
+                    
+                    <!-- Контент -->
+                    <div class="tabs__items">
+                        <div class="tabs__item tabs__item--extra" id="tab-1">
+                            <strong>
+                                <div class="box-fill box-fill--mb-40">
+                                    <div class="box-fill__grid-main">
+                                        <div>
+                                            <h3 class="box-fill__title">
+                                                Отдел доставки. <br> Свяжитесь с нами по номеру:
+                                                <br><br>
+                                                8 (987) 654 32 10
+                                            </h3>
+                                        </div>
+                                        <div>
+                                            <h4 class="box-fill__subtitle">
+                                                Доставка по Санкт-Петербургу:
+                                            </h4>
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Стандартная: с 12:00 до 18:00 или вечером с 18:00 до 00:00.
+                                                </li>
+                                                <li class="list__item">
+                                                    Доставка в определённое время:  <br>
+                                                    Выбирайте удобные интервалы доставки на выбор (+ 200 рублей (без НДС) к основной стоимости доставки.):
+                                                </li>
+                                                <li class="list__item">
+                                                    с 15:00 до 17:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 16:00 до 18:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 17:00 до 19:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 18:00 до 20:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 19:00 до 21:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 20:00 до 22:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 21:00 до 23:00;
+                                                </li>
+                                                <li class="list__item">
+                                                    с 22:00 до 00:00.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="accordion__group">
+                                        <h3 class="accordion__header default-open">Условия доставки</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений.  
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи. 
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Тарифы и цены</h3>
+                                        <div class="accordion__body accordion__body--extra">
+                                            <div class="wrap-table">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="table__title">
+                                                                Доставка
+                                                            </th>
+                                                            <th class="table__title">
+                                                                Первый товар
+                                                            </th>
+                                                            <th class="table__title">
+                                                                Последующий товар в заказе
+                                                            </th>
+                                                            <th class="table__title">
+                                                                Подъем
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="table__subtitle">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table__subtitle">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table__subtitle">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table__subtitle">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table__subtitle">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                            <td class="table__text">
+                                                                Текстовое описание
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Условия доставки</h3>
+                                        <div class="accordion__body accordion__body--extra">
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                            </ul>        
+                                        </div>
+                                        <h3 class="accordion__header default-open">Товар, оплаченный по безналичному расчету</h3>
+                                        <div class="accordion__body accordion__body--extra">
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                            </ul>         
+                                        </div>
+                                    </div>
+                                </div>
+                            </strong>
+                        </div>
+                        <div class="tabs__item tabs__item--extra" id="tab-2">
+                            <strong>
+                                <div class="box-fill box-fill--mb-40">
+                                    <h4 class="box-fill__subtitle box-fill__subtitle--extra">
+                                        Обращаем Ваше внимание, что заказанный товар будет ожидать Вас в пункте выдачи только 2 дня: назначенный и следующий за ним день. Приносим свои извинения и надеемся на Ваше понимание!
+                                    </h4>
+                                </div>
+                                <div class="accordion">
+                                    <div class="accordion__group">
+                                        <h3 class="accordion__header default-open">Условия получения в пункте выдачи</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Как добраться</h3>
+                                        <div class="accordion__body accordion__body--extra">
+                                            <div class="accordion__grid-two-col">
+                                                <div>
+                                                    <div id="map" style="max-width: 527px; height: 357px;"></div>
+                                                </div>
+                                                <div>
+                                                    <h4 class="accordion__subtitle">
+                                                        Метро Невский проспект
+                                                    </h4>
+                                                    <p class="accordion__paragrafe">
+                                                        Невский проспект дом 1, офис 108, ТЦ «Невский» (5 мин. пешком от метро "Невский проспект"), 1 этаж, павильон «Пункт выдачи заказов».
+                                                    </p>
+                                                    <ul class="list">
+                                                        <li class="list__item">
+                                                            Режим работы: ежедневно с 11:00 до 21:00
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Телефон: 8 (495) 258-81-30
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Тарифы и цены</h3>
+                                        <div class="accordion__body accordion__body--extra">
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                </li>
+                                                <li class="list__item">
+                                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </strong>
+                        </div>
+                        <div class="tabs__item tabs__item--extra" id="tab-3">
+                            <strong>
+                                <div class="accordion">
+                                    <div class="accordion__group">
+                                        <h3 class="accordion__header default-open">Доставка</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <div class="accordion__grid-two-col accordion__grid-two-col--extra">
+                                                <div>
+                                                    <img src="./img/logo-cdek.png" alt="Логотип CDEK">
+                                                </div>
+                                                <div>
+                                                    <p class="accordion__paragrafe">
+                                                        СДЭК с 2000 года организовывает перевозки грузов, деловой корреспонденции, товаров разных категорий, габаритов, ценности по Москве, России и миру. У компании более 420 собственных офисов и около 400 партнерских, порядка 5 000 машин для доставки документов и грузов.
+                                                    </p>
+                                                    <h4 class="accordion__subtitle">
+                                                        Преимущества СДЭК:
+                                                    </h4>
+                                                    <ul class="list">
+                                                        <li class="list__item">
+                                                            Приемлемое соотношение цены и качества.
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Гибкость: доставка грузов в более чем 20 000 городов в 220 странах и регионах.
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Осведомленность: отслеживание груза на любом этапе доставки.                                                    
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Оперативность отправки груза (как правило, день в день.                                                    
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Развитая сеть: более 900 подразделений и представительств.
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Фирменная упаковка груза (конверт, пакет, обрешетка).
+                                                        </li>
+                                                        <li class="list__item">
+                                                            Сохранность отправлений.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="accordion__paragrafe">
+                                                        Мы уверены за товар, который отправлен с помощью СДЭК, ведь доставка заказов должна быть своевременной и качественной, а покупки доставлять удовольствие!
+                                                    </p>
+                                                    <h4 class="accordion__subtitle accordion__subtitle--extra ">
+                                                        100% предоплата при заказе свыше 5000 рублей
+                                                    </h4>
+                                                </div>
+                                            </div>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </strong>
+                        </div>
+                        <div class="tabs__item tabs__item--extra" id="tab-4">
+                            <strong>
+                                <div class="accordion">
+                                    <div class="accordion__group">
+                                        <h3 class="accordion__header default-open">Вопрос 1</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 2</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 3</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 4</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 5</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 6</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 7</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                        <h3 class="accordion__header default-open">Вопрос 8</h3>    
+                                        <div class="accordion__body accordion__body--extra">
+                                            <p class="accordion__paragrafe">
+                                                Противоположная точка зрения подразумевает, что интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Ясность нашей позиции очевидна: убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. 
+                                                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на социально-ориентированный национальный проект выявляет срочную потребность своевременного выполнения сверхзадачи.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </strong>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col-1">
+                    <img class="footer__logotype" src="./img/Logo_white.svg" alt="Логотип" width="92px" height="34px">
+                    <p class="footer__description">
+                        Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-2"></div>
+                <div class="footer__col-3">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__title-extra">
+                                Разделы
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <span class="footer__title-extra">
+                        Instagram
+                    </span>
+                    <div class="footer__block-instagram">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_1.png" alt="Instagram_1">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_2.png" alt="Instagram_2">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_3.png" alt="Instagram_3">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_4.png" alt="Instagram_4">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_5.png" alt="Instagram_5">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_6.png" alt="Instagram_6">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    © Полное название компании, 2021
+                </div>
+                <div class="footer__block-arrow">
+                    <a href="http://www.alice-studio.ru/" target="_blank">
+                        <img src="./img/Подпись_АР_белый 1.svg" alt="Логотип Погарская Алиса">
+                    </a>
+                    <a class="footer__block-arrow-top scroll-to" href="#top">
+                        <svg class="footer__arrow-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.66667L5 12.5L10 7.66667V7.66667Z" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 7.66667L15 12.5" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script> 
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', { // id блока с картой
+                    center: [59.937357, 30.313359],  // центр карты
+                    zoom: 16, // коэффицент масштаба карты (широта и долгота)
+                    controls: []
+                });
+
+            // myMap.behaviors.disable('scrollZoom');  отключаем масштабирование скролом
+
+            myMap.controls.add("zoomControl", { // из элементов карты оставляем только масштабирование ползунком
+                position: {top: 10, left: 10}
+            });
+
+            // добавляем метку на карту
+            var myPlacemark = new ymaps.Placemark([59.937357, 30.313359], {
+                balloonContent: '<h4>Привет!</h4><p>Мы находимся здесь :)</p>'
+            },
+            {
+                iconLayout: 'default#image', // обозначаем что будет использоваться пользовательское изображение
+                iconImageHref: '/img/Map_point.svg',  // указываем путь к картинке которая будет служить меткой
+                iconImageSize: [9, 9], // указываем размер изображения
+                iconImageOffset: [0, 0], // обозначаем сдвиг от левого верхнего угла к точке изображения метки .
+                balloonContentSize: [130, 130], // Размеры содержимого балуна
+                //balloonLayout: "default#imageWithContent", // Задаем макет балуна - пользовательская картинка с контентом
+                //balloonImageHref: 'newbaloon.png', // Картинка балуна
+                //balloonImageOffset: [-5, -60], // Смещение картинки балуна
+                //balloonImageSize: [150, 150], // Размеры картинки балуна
+                balloonShadow: false, // Балун не имеет тени
+                balloonPanelMaxMapArea: 0,
+                hideIconOnBalloonOpen: false,
+                balloonOffset: [4, -10]
+            });
+
+            myMap.geoObjects.add(myPlacemark) // добавляем метку на карту
+            myPlacemark.balloon.open()
+        });
+    </script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

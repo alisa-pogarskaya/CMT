@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Результаты поиска</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__grid">
+    
+        <a href="index.html" class="header__col-1">
+          <img class="header__logotype" src="./img/Logo.svg" alt="Логотип" width="92px" height="34px">
+        </a>
+    
+        <div class="header__col-2">
+          <a class="header__catalog-btn" href="/" data-header="catalog"> <!-- header__catalog-btn--active добавить для авктивного пункта меню на странице которой находимся -->
+            Каталог
+          </a>
+          <div class="header__catalog-menu">
+              <ul class="header__catalog-list container">
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Parket.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Паркет
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Плитка
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    
+        <div class="header__col-3">
+          <ul class="nav" id="config-btn">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="portfolio.html"> <!-- nav__link--active использовать для активного пункта на странице которой находимся -->
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html"> 
+                  О компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html"> 
+                  Доставка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacts.html"> 
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </div>
+    
+        <div class="header__col-4 header__block-icon">
+          <a href="block-catalog.html" class="header__block-basket">
+            <img class="header__basket header__hover" src="./img/Icon/Icon _ Basket.svg" alt="Корзина" width="40px" height="40px">
+            <span class="header__basket-title">2</span>
+          </a>
+          <div class="nav-menu__menuToggle nav-menu__icon" data-header="menu">
+              <span class="nav-menu__hamburger"></span>
+          </div>
+        </div>
+    
+        <button type="button" class="header__col-5 header__search" data-header="search">
+          <svg class="header__hover" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6 24.4L29.2 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8 18C26.8 22.4184 23.039 26 18.3997 26C13.7605 26 10 22.4184 10 18C10 13.5816 13.7605 10 18.3997 10C23.039 10 26.8 13.5816 26.8 18V18Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+    
+        <!-- выдвижной поиск меню-->
+        <div class="header__search-form">
+          <form class="header__search-form-grid" action="#" method="post">
+            <div class="header__search-form-col">
+              <input class="header__search-form-input" type="search" placeholder="Найти...">
+            </div>
+          </form>
+    
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section-title">
+          <div class="container">
+              <h1 class="section-title__text">
+                  Результаты поиска
+              </h1>
+          </div>
+      </div>
+      <div class="result-search result-search__grid">
+          <div class="container">
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Уникальная коллекция. Созданно в Италии
+                  </a>
+                  <p class="result-search__description">
+                      Разнообразный и богатый опыт говорит нам, что укрепление и развитие внутренней структуры, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для существующих финансовых и административных условий. Сложно сказать, почему активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности!
+                  </p>
+              </div>
+          
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Оригинальные коллекции 2021 года
+                  </a>
+                  <p class="result-search__description">
+                      Сложно сказать, почему активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности!
+                  </p>
+              </div>
+          
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Италия и Испания, коллекция 2018 года
+                  </a>
+                  <p class="result-search__description">
+                      Противоположная точка зрения подразумевает, что независимые государства формируют глобальную экономическую сеть и при этом - объявлены нарушающими общечеловеческие нормы этики и морали. Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке преданы социально-демократической анафеме.
+                  </p>
+              </div>
+          
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Оригинальные коллекции 2021 года
+                  </a>
+                  <p class="result-search__description">
+                      Сложно сказать, почему активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности!
+                  </p>
+              </div>
+          
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Уникальная коллекция. Созданно в Италии
+                  </a>
+                  <p class="result-search__description">
+                      Разнообразный и богатый опыт говорит нам, что укрепление и развитие внутренней структуры, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для существующих финансовых и административных условий. Сложно сказать, почему активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности!
+                  </p>
+              </div>
+          
+              <div class="result-search__item">
+                  <a class="result-search__link" href="#">
+                      Оригинальные коллекции 2021 года
+                  </a>
+                  <p class="result-search__description">
+                      Сложно сказать, почему активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности!
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+      <!-- BEGIN PAGINATE -->
+      <div class="paginate paginate__list">
+          <a class="paginate__button" href="#">
+              <img class="paginate__icon paginate__icon--left" src="./img/Icon/Paginate/Icon _ arrow-left.svg" alt="Стрелка назад">
+              <img class="paginate__decor paginate__decor--left" src="./img/Icon/Paginate/Icon _ divider.svg" alt="Разделитель">
+              <span class="paginate__text">
+                  Назад
+              </span>
+          </a>
+          <a class="paginate__item" href="#">
+              2
+          </a>
+          <a class="paginate__item">
+              ...
+          </a>
+          <a class="paginate__item" href="#">
+              5
+          </a>
+          <a class="paginate__button paginate__button--disabled" disabled="disabled" href="#">
+              <span class="paginate__text">
+                  Далее
+              </span>
+              <img class="paginate__decor paginate__decor--right" src="./img/Icon/Paginate/Icon _ divider.svg" alt="Разделитель">
+              <img class="paginate__icon paginate__icon--right" src="./img/Icon/Paginate/Icon _ arrow-right.svg" alt="Стрелка назад">
+          </a>
+      </div>
+      <!-- END PAGINATE -->
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col-1">
+                    <img class="footer__logotype" src="./img/Logo_white.svg" alt="Логотип" width="92px" height="34px">
+                    <p class="footer__description">
+                        Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-2"></div>
+                <div class="footer__col-3">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__title-extra">
+                                Разделы
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <span class="footer__title-extra">
+                        Instagram
+                    </span>
+                    <div class="footer__block-instagram">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_1.png" alt="Instagram_1">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_2.png" alt="Instagram_2">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_3.png" alt="Instagram_3">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_4.png" alt="Instagram_4">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_5.png" alt="Instagram_5">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_6.png" alt="Instagram_6">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    © Полное название компании, 2021
+                </div>
+                <div class="footer__block-arrow">
+                    <a href="http://www.alice-studio.ru/" target="_blank">
+                        <img src="./img/Подпись_АР_белый 1.svg" alt="Логотип Погарская Алиса">
+                    </a>
+                    <a class="footer__block-arrow-top scroll-to" href="#top">
+                        <svg class="footer__arrow-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.66667L5 12.5L10 7.66667V7.66667Z" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 7.66667L15 12.5" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

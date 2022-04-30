@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Контакты</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__grid">
+    
+        <a href="index.html" class="header__col-1">
+          <img class="header__logotype" src="./img/Logo.svg" alt="Логотип" width="92px" height="34px">
+        </a>
+    
+        <div class="header__col-2">
+          <a class="header__catalog-btn" href="/" data-header="catalog"> <!-- header__catalog-btn--active добавить для авктивного пункта меню на странице которой находимся -->
+            Каталог
+          </a>
+          <div class="header__catalog-menu">
+              <ul class="header__catalog-list container">
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Parket.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Паркет
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Плитка
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    
+        <div class="header__col-3">
+          <ul class="nav" id="config-btn">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="portfolio.html"> <!-- nav__link--active использовать для активного пункта на странице которой находимся -->
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html"> 
+                  О компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html"> 
+                  Доставка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacts.html"> 
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </div>
+    
+        <div class="header__col-4 header__block-icon">
+          <a href="block-catalog.html" class="header__block-basket">
+            <img class="header__basket header__hover" src="./img/Icon/Icon _ Basket.svg" alt="Корзина" width="40px" height="40px">
+            <span class="header__basket-title">2</span>
+          </a>
+          <div class="nav-menu__menuToggle nav-menu__icon" data-header="menu">
+              <span class="nav-menu__hamburger"></span>
+          </div>
+        </div>
+    
+        <button type="button" class="header__col-5 header__search" data-header="search">
+          <svg class="header__hover" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6 24.4L29.2 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8 18C26.8 22.4184 23.039 26 18.3997 26C13.7605 26 10 22.4184 10 18C10 13.5816 13.7605 10 18.3997 10C23.039 10 26.8 13.5816 26.8 18V18Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+    
+        <!-- выдвижной поиск меню-->
+        <div class="header__search-form">
+          <form class="header__search-form-grid" action="#" method="post">
+            <div class="header__search-form-col">
+              <input class="header__search-form-input" type="search" placeholder="Найти...">
+            </div>
+          </form>
+    
+        </div>
+      </div>
+    </header>
+    <main class="main--npb">
+      <div class="section-title">
+          <div class="container">
+              <h1 class="section-title__text">
+                Контакты
+              </h1>
+          </div>
+      </div>
+      <div class="block-contacts">
+          <div class="block-contacts__grid">
+              <div class="block-contacts__col block-contacts__col-1">
+                  <h2 class="block-contacts__title">
+                      Связаться с нами
+                  </h2>
+                  <div class="block-contacts__address">
+                      г. Санкт-Петербург, Невский проспект, дом 1, офис 107
+                  </div>
+                  <h4 class="block-contacts__subtitle">
+                      Центр обслуживания клиентов:
+                  </h4>
+                  <ul class="list list--mb-40">
+                      <li class="list__item">
+                          +7 (987) 654 32 10
+                      </li>
+                      <li class="list__item">
+                          +7 (987) 101 23 45
+                      </li>
+                  </ul>
+                  <h4 class="block-contacts__subtitle">
+                      Информация об организации:
+                  </h4>
+                  <ul class="list">
+                      <li class="list__item-no-doted">
+                          ИНН:  0000000000
+                      </li>
+                      <li class="list__item-no-doted">
+                          ОГРН:  0000000000
+                      </li>
+                      <li class="list__item-no-doted">
+                          Юридический адрес: г. Санкт-Петербург, Невский проспект, дом 1, офис 107
+                      </li>
+                  </ul>
+              </div>
+              <div class="block-contacts__col">
+                  <form class="form" id="application" action="application.php" method="POST" name="application">
+                      <input class="form__input" name="name" placeholder="Ваше имя*" required />
+                      <input class="form__input" name="email" type="email" placeholder="E-mail*" required />
+                      <textarea class="form__textarea" name="msg" placeholder="Сообщение:"></textarea>
+                      <span class="form__agreement">
+                          Нажимая на кнопку, вы соглашаетесь на обработку персональных данных.
+                      </span>
+                      <button class="btn btn--small form__btn" type="submit" form="application">Отправить сообщение</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </main>
+    <div id="map"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col-1">
+                    <img class="footer__logotype" src="./img/Logo_white.svg" alt="Логотип" width="92px" height="34px">
+                    <p class="footer__description">
+                        Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-2"></div>
+                <div class="footer__col-3">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__title-extra">
+                                Разделы
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <span class="footer__title-extra">
+                        Instagram
+                    </span>
+                    <div class="footer__block-instagram">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_1.png" alt="Instagram_1">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_2.png" alt="Instagram_2">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_3.png" alt="Instagram_3">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_4.png" alt="Instagram_4">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_5.png" alt="Instagram_5">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_6.png" alt="Instagram_6">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    © Полное название компании, 2021
+                </div>
+                <div class="footer__block-arrow">
+                    <a href="http://www.alice-studio.ru/" target="_blank">
+                        <img src="./img/Подпись_АР_белый 1.svg" alt="Логотип Погарская Алиса">
+                    </a>
+                    <a class="footer__block-arrow-top scroll-to" href="#top">
+                        <svg class="footer__arrow-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.66667L5 12.5L10 7.66667V7.66667Z" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 7.66667L15 12.5" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script> 
+
+    <script>
+      ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', { // id блока с картой
+          center: [59.937357, 30.313359],  // центр карты
+          zoom: 16, // коэффицент масштаба карты (широта и долгота)
+          controls: []
+        });
+
+      // myMap.behaviors.disable('scrollZoom');  отключаем масштабирование скролом
+
+      myMap.controls.add("zoomControl", { // из элементов карты оставляем только масштабирование ползунком
+        position: {top: 10, left: 10}
+      });
+
+      // добавляем метку на карту
+      var myPlacemark = new ymaps.Placemark([59.937357, 30.313359], {
+        balloonContent: '<h4>Привет!</h4><p>Мы находимся здесь :)</p>'
+      },
+      {
+        iconLayout: 'default#image', // обозначаем что будет использоваться пользовательское изображение
+        iconImageHref: '/img/Map_point.svg',  // указываем путь к картинке которая будет служить меткой
+        iconImageSize: [9, 9], // указываем размер изображения
+        iconImageOffset: [0, 0], // обозначаем сдвиг от левого верхнего угла к точке изображения метки .
+        balloonContentSize: [130, 130], // Размеры содержимого балуна
+        //balloonLayout: "default#imageWithContent", // Задаем макет балуна - пользовательская картинка с контентом
+        //balloonImageHref: 'newbaloon.png', // Картинка балуна
+        //balloonImageOffset: [-5, -60], // Смещение картинки балуна
+        //balloonImageSize: [150, 150], // Размеры картинки балуна
+        balloonShadow: false, // Балун не имеет тени
+        balloonPanelMaxMapArea: 0,
+        hideIconOnBalloonOpen: false,
+        balloonOffset: [4, -10]
+        });
+
+      myMap.geoObjects.add(myPlacemark) // добавляем метку на карту
+      myPlacemark.balloon.open()
+    });
+    </script>
+  </body>
+</html>

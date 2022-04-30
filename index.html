@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="./styles/main.css?v=0.0.0">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__grid">
+    
+        <a href="index.html" class="header__col-1">
+          <img class="header__logotype" src="./img/Logo.svg" alt="Логотип" width="92px" height="34px">
+        </a>
+    
+        <div class="header__col-2">
+          <a class="header__catalog-btn" href="/" data-header="catalog"> <!-- header__catalog-btn--active добавить для авктивного пункта меню на странице которой находимся -->
+            Каталог
+          </a>
+          <div class="header__catalog-menu">
+              <ul class="header__catalog-list container">
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Parket.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Паркет
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Плитка
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+                <li class="header__catalog-item">
+                  <img class="header__catalog-image" src="./img/Catalog_image/Image_Catalog_Tile.png" alt="Изображение паркета" width="125px" height="125px">
+                  <a href="block-catalog.html" class="header__catalog-title">
+                    Новый раздел
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    
+        <div class="header__col-3">
+          <ul class="nav" id="config-btn">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="portfolio.html"> <!-- nav__link--active использовать для активного пункта на странице которой находимся -->
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html"> 
+                  О компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html"> 
+                  Доставка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacts.html"> 
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </div>
+    
+        <div class="header__col-4 header__block-icon">
+          <a href="block-catalog.html" class="header__block-basket">
+            <img class="header__basket header__hover" src="./img/Icon/Icon _ Basket.svg" alt="Корзина" width="40px" height="40px">
+            <span class="header__basket-title">2</span>
+          </a>
+          <div class="nav-menu__menuToggle nav-menu__icon" data-header="menu">
+              <span class="nav-menu__hamburger"></span>
+          </div>
+        </div>
+    
+        <button type="button" class="header__col-5 header__search" data-header="search">
+          <svg class="header__hover" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6 24.4L29.2 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8 18C26.8 22.4184 23.039 26 18.3997 26C13.7605 26 10 22.4184 10 18C10 13.5816 13.7605 10 18.3997 10C23.039 10 26.8 13.5816 26.8 18V18Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+    
+        <!-- выдвижной поиск меню-->
+        <div class="header__search-form">
+          <form class="header__search-form-grid" action="#" method="post">
+            <div class="header__search-form-col">
+              <input class="header__search-form-input" type="search" placeholder="Найти...">
+            </div>
+          </form>
+    
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sim-slider" id="top">
+          <ul class="sim-slider__list">
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Premium-slider_image.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Оригинальные коллекции
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений. Наша позиция очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+      
+              <li class="sim-slider__element">
+                  <img class="sim-slider__image" src="./img/Bg-cart-product.png" alt="image">
+                  <div class="sim-slider__text">
+                      <div class="container">
+                          <div class="sim-slider__grid">
+                              <div class="sim-slider__col">
+                                  <span class="sim-slider__subtitle">
+                                      Предлагаем
+                                  </span>
+                                  <h1 class="sim-slider__maintitle">
+                                      Лучшие коллекции мира
+                                  </h1>
+                                  <p class="sim-slider__paragrafe">
+                                      Ясность нашей позиции очевидна.
+                                  </p>
+                                  <div class="sim-slider__btn-block">
+                                      <a href="/" class="btn btn_150">
+                                          Смотреть
+                                      </a>
+                                      <a href="/" class="btn btn_222">
+                                          Купить сейчас
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="sim-slider__col">
+                                  <a class="scroll-to" href="#scroll-bottom">
+                                      <div class="arrow-bottom">
+                                          <div class="arrow-bottom__title">
+                                              Вниз
+                                          </div>
+                                          <img src="./img/Icon/Icon _ arrow bottom.svg" alt="" width="40px" height="40px">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              
+          </ul>
+          <div class="container">
+              <div class="sim-slider__arrow-block">
+                  <div class="sim-slider__arrow-left"></div>
+                  <div class="sim-slider__arrow-right"></div>
+                  <div class="sim-slider__dots"></div>
+              </div>
+          </div>
+      </div>
+      <div class="block-cart" id="scroll-bottom">
+          <div class="container">
+              <div class="block-cart__block-text">
+                  <h1 class="block-cart__title">
+                      Новые продукты
+                  </h1>
+                  <p class="block-cart__subtitle">
+                      Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                  </p>
+              </div>
+              <div class="block-cart__grid">
+                  <div class="block-cart__col">
+                      <div class="cart-main">
+                          <div class="cart-main__image-cont">
+                              <img class="cart-main__image" src="./img/Premium_slider/Premium-slider_image.png" alt="Изображение карточки">
+                          </div>
+                          <a href="card-product.html" class="cart-main__title">
+                              Albion Prima
+                          </a>
+                          <div class="cart-main__block-price">
+                              <div class="cart-main__price">
+                                  100000 руб.
+                              </div>
+                              <a href="my-orders.html" class="cart-main__basket">
+                                  В корзину
+                              </a>
+                          </div>
+                          <div class="cart-main__caption">
+                              New
+                          </div>
+                      </div>
+                  </div>
+                  <div class="block-cart__col">
+                      <div class="cart-main">
+                          <div class="cart-main__image-cont">
+                              <img class="cart-main__image" src="./img/Premium_slider/Premium-slider_image.png" alt="Изображение карточки">
+                          </div>
+                          <a href="card-product.html" class="cart-main__title">
+                              Albion Prima
+                          </a>
+                          <div class="cart-main__block-price">
+                              <div class="cart-main__price">
+                                  100000 руб.
+                              </div>
+                              <a href="my-orders.html" class="cart-main__basket">
+                                  В корзину
+                              </a>
+                          </div>
+                          <div class="cart-main__caption">
+                              New
+                          </div>
+                      </div>
+                  </div>
+                  <div class="block-cart__col">
+                      <div class="cart-main">
+                          <div class="cart-main__image-cont">
+                              <img class="cart-main__image" src="./img/Premium_slider/Premium-slider_image.png" alt="Изображение карточки">
+                          </div>
+                          <a href="card-product.html" class="cart-main__title">
+                              Albion Prima
+                          </a>
+                          <div class="cart-main__block-price">
+                              <div class="cart-main__price">
+                                  100000 руб.
+                              </div>
+                              <a href="my-orders.html" class="cart-main__basket">
+                                  В корзину
+                              </a>
+                          </div>
+                          <div class="cart-main__caption">
+                              New
+                          </div>
+                      </div>
+                  </div>
+                  <div class="block-cart__col">
+                      <div class="cart-main">
+                          <div class="cart-main__image-cont">
+                              <img class="cart-main__image" src="./img/Premium_slider/Premium-slider_image.png" alt="Изображение карточки">
+                          </div>
+                          <a href="card-product.html" class="cart-main__title">
+                              Albion Prima
+                          </a>
+                          <div class="cart-main__block-price">
+                              <div class="cart-main__price">
+                                  100000 руб.
+                              </div>
+                              <a href="my-orders.html" class="cart-main__basket">
+                                  В корзину
+                              </a>
+                          </div>
+                          <div class="cart-main__caption">
+                              New
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <a href="#" class="popup__open">
+          <div class="block-video">
+              <img class="block-video__image" src="./img/video.png" alt="Видео">
+              <div class="block-video__block-play">
+                  <img class="block-video__icon" src="./img/Icon/Icon _ play.svg" alt="Смотреть">
+                  <span class="block-video__title">
+                      Процесс создания итальянской плитки
+                  </span>
+              </div>
+          </div>
+      </a>
+      
+      <div class="popup__bg"> 
+          <form class="popup">
+              <img src="./img/Icon/Icon _ Cross-close.svg" class="popup__close">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XDdaWAn3Q-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </form>
+      </div>
+      <div class="block-cart-category">
+          <div class="container">
+              <div class="block-cart-category__grid">
+                  <div class="block-cart-category__col">
+                      <a class="cart-category" href="#">
+                          <span class="cart-category__title">
+                              Название категории
+                          </span>
+                      </a>
+                  </div>
+                  <div class="block-cart-category__col">
+                      <a class="cart-category" href="#">
+                          <span class="cart-category__title">
+                              Название категории
+                          </span>
+                      </a>
+                  </div>
+                  <div class="block-cart-category__col">
+                      <a class="cart-category" href="#">
+                          <span class="cart-category__title">
+                              Название категории
+                          </span>
+                      </a>
+                  </div>
+                  <div class="block-cart-category__col">
+                      <a class="cart-category" href="#">
+                          <span class="cart-category__title">
+                              Название категории
+                          </span>
+                      </a>
+                  </div>
+              </div>
+              <div class="cart-best-seller">
+                  <div class="cart-best-seller__grid">
+                      <div class="cart-best-seller__block-image">
+                          <img class="cart-best-seller__image" src="./img/Best-seller.png" alt="Изображение">
+                      </div>
+                      <div class="cart-best-seller__block-text">
+                          <span class="cart-best-seller__caption">
+                              БЕСТСЕЛЛЕР
+                          </span>
+                          <h5 class="cart-best-seller__title">
+                              Уникальный дизайн, создано в Испании.
+                          </h5>
+                          <p class="cart-best-seller__paragrafe">
+                              Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                          </p>
+                          <a href="/" class="btn">
+                              Посмотреть коллекцию
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="block-instagram">
+          <div class="container">
+              <div class="block-instagram__block-text">
+                  <h2 class="block-instagram__title">
+                      #плитка
+                  </h2>
+                  <p class="block-instagram__subtitle">
+                      Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                  </p>
+                  <a href="/" class="btn btn_300 btn--gray">
+                      Присоединиться
+                  </a>
+              </div>
+              <div class="block-instagram__grid">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-1" src="./img/Instagram/Image-Instagram-1.png" alt="Изображение">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-2" src="./img/Instagram/Image-Instagram-2.png" alt="Изображение">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-3" src="./img/Instagram/Image-Instagram-3.png" alt="Изображение">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-4" src="./img/Instagram/Image-Instagram-4.png" alt="Изображение">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-5" src="./img/Instagram/Image-Instagram-5.png" alt="Изображение">
+                  <img class="block-instagram__image block-instagram__col block-instagram__col-6" src="./img/Instagram/Image-Instagram-6.png" alt="Изображение">
+              </div>
+          </div>
+      </div>
+    </main>
+    <div class="newsletter">
+        <div class="container">
+            <div class="newsletter__grid">
+                <div class="newsletter__col">
+                    <div class="newsletter__title">
+                        Новостная рассылка
+                    </div>
+                </div>
+                <div class="newsletter__col">
+                    <div class="newsletter__description">
+                        Подпишитесь на нашу рассылку новостей, чтобы быть в центре событий
+                    </div>
+                </div>
+                <div class="newsletter__col">
+                    <form class="newsletter__form" id="application" action="application.php" method="POST" name="application">
+                        <input class="newsletter__input" name="email" type="email" placeholder="Введите E-mail адрес" required />
+                        <button class="newsletter__btn" type="submit" newsletter="application"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col-1">
+                    <img class="footer__logotype" src="./img/Logo_white.svg" alt="Логотип" width="92px" height="34px">
+                    <p class="footer__description">
+                        Ясность нашей позиции очевидна: убежденность некоторых оппонентов требует определения и уточнения принимаемых решений.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="no-page.html">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-2"></div>
+                <div class="footer__col-3">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__title-extra">
+                                Разделы
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <span class="footer__title-extra">
+                        Instagram
+                    </span>
+                    <div class="footer__block-instagram">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_1.png" alt="Instagram_1">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_2.png" alt="Instagram_2">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_3.png" alt="Instagram_3">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_4.png" alt="Instagram_4">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_5.png" alt="Instagram_5">
+                        <img class="footer__block-instagram-image" src="./img/Instagram/Instagram_6.png" alt="Instagram_6">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    © Полное название компании, 2021
+                </div>
+                <div class="footer__block-arrow">
+                    <a href="http://www.alice-studio.ru/" target="_blank">
+                        <img src="./img/Подпись_АР_белый 1.svg" alt="Логотип Погарская Алиса">
+                    </a>
+                    <a class="footer__block-arrow-top scroll-to" href="#top">
+                        <svg class="footer__arrow-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" fill="none"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.66667L5 12.5L10 7.66667V7.66667Z" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 7.66667L15 12.5" stroke="#EE4343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
